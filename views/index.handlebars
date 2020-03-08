@@ -1,0 +1,131 @@
+<section class="hero is medium">
+    <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+            <h1 class="has-text-weight-bold is-size-4 has-text-white" id="home">mymoviesaver</h1>
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-end">
+            <a class="navbar-item has-text-white has-text-weight-bold" id="my-list">
+                my movie list
+            </a>
+            </div>
+        </div>
+    </nav>
+    <div class="hero-body">
+        <div class="hero-container container has-text-centered">
+            <h1 class="title has-text-white has-text-weight-bold is-size-2">
+                <!-- A source of show and actor info -->
+            </h1>
+            <div class="control has-icons-left is-black">
+                <input class="input is-medium is-rounded" type="text" placeholder="Search for movies or actors to save" id="user-input">
+                <span class="icon is-left">
+                    <i class="fas fa-search"></i>
+                </span>
+            </div>
+            <p class="hero-p has-text-light">
+                <strong class="has-text-light">Suggestions: </strong>Harry Potter, Anthony Mackie, The Green Mile
+            </p>
+            <a class="hero-button button is-info is-rounded" id="movie-submit">
+                Find Movie
+            </a>
+            <a class="hero-button button is-info is-rounded" id="actor-submit">
+                Find Actor
+            </a>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="modal" id="test-modal">
+        <div class="modal-background stat-modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head stat-head">
+                <p class="modal-card-title">2020 Stats</p>
+                <button class="delete stats-delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body stat-text">
+                    <div class="stats-container container"></div>
+            </section>
+            <footer class="modal-card-foot stat-footer"></footer>
+        </div>
+    </div>
+    <div class="modal" id="warning-modal">
+        <div class="modal-background warning-modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head has-background-warning">
+                <p class="modal-card-title">Error</p>
+                <button class="delete warning-delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body warning-text">
+                    <p>
+                        Oops! We didn't find who you were looking for. Please check your spelling and try again.
+                    </p>
+            </section>
+            <footer class="modal-card-foot has-background-warning"></footer>
+        </div>
+    </div>
+<div class="modal modal-fx-slideRight" id="movie-modal">
+        <div class="modal-background"></div>
+        <div class="modal-content is-huge has-background-white-ter columns">
+            <figure class="image movie-poster column">
+                <img src="" class="movie-poster">
+            </figure>
+            <div class="column">
+                <h1 class="is-size-3 title-h1 is-inline-block"></h1>
+                <a class="button is-primary is-rounded movie-info" id="watch-submit">
+                    <i class="fas fa-plus fa-fw"></i>
+                    Add
+                </a>
+                <h2 class="is-size-6 movie-info rating"></h2> 
+                <h2 class="is-size-6 movie-info director"></h2>
+                <h2 class="is-size-6 movie-info actors"></h2>
+                <h2 class="is-size-6 movie-info plot"></h2>
+                <div class="movie-div">
+                    <figure class="image is-16by9">
+                        <iframe class="has-ratio trailer" width="640" height="360" src="https://www.youtube.com/embed/YE7VzlLtp-4?showinfo=0" frameborder="0" allowfullscreen></iframe>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+    <div class="modal modal-fx-slideRight" id="added-modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title"></p>
+                <button class="added-close delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+                <p class="has-text-centered">
+                    <h1 class="is-size-3 has-text-centered">
+                        Show added! Watch responsibly.
+                    </h1>
+                </p>
+            </section>
+            <footer class="modal-card-foot">
+            </footer>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="has-text-left">
+            <h1 class="is-size-3 movies-container-title">
+                Trending:
+            </h1>
+            <div class="movies-container column is-centered">
+                {{!-- drop searched show objects here --}}
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="/js/index.js"></script>
