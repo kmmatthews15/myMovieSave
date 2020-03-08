@@ -2,6 +2,7 @@
     <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="#">
+            <!-- <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"> -->
             <h1 class="has-text-weight-bold is-size-4 has-text-white" id="home">mymoviesaver</h1>
             </a>
             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -13,7 +14,7 @@
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-end">
             <a class="navbar-item has-text-white has-text-weight-bold" id="my-list">
-                my movie list
+                my list
             </a>
             </div>
         </div>
@@ -21,16 +22,16 @@
     <div class="hero-body">
         <div class="hero-container container has-text-centered">
             <h1 class="title has-text-white has-text-weight-bold is-size-2">
-                <!-- A source of show and actor info -->
+                <!-- A source of movie and actor info -->
             </h1>
             <div class="control has-icons-left is-black">
-                <input class="input is-medium is-rounded" type="text" placeholder="Search for movies or actors to save" id="user-input">
+                <input class="input is-medium is-rounded" type="text" placeholder="Search for movies or actors to binge" id="user-input">
                 <span class="icon is-left">
                     <i class="fas fa-search"></i>
                 </span>
             </div>
             <p class="hero-p has-text-light">
-                <strong class="has-text-light">Suggestions: </strong>Harry Potter, Anthony Mackie, The Green Mile
+                <strong class="has-text-light">Suggestions: </strong>Harry Potter, Anthony Mackie, Parasite
             </p>
             <a class="hero-button button is-info is-rounded" id="movie-submit">
                 Find Movie
@@ -46,7 +47,7 @@
         <div class="modal-background stat-modal-background"></div>
         <div class="modal-card">
             <header class="modal-card-head stat-head">
-                <p class="modal-card-title">2020 Stats</p>
+                <p class="modal-card-title">2019 Stats</p>
                 <button class="delete stats-delete" aria-label="close"></button>
             </header>
             <section class="modal-card-body stat-text">
@@ -80,7 +81,7 @@
                 <h1 class="is-size-3 title-h1 is-inline-block"></h1>
                 <a class="button is-primary is-rounded movie-info" id="watch-submit">
                     <i class="fas fa-plus fa-fw"></i>
-                    Add
+                    Watch
                 </a>
                 <h2 class="is-size-6 movie-info rating"></h2> 
                 <h2 class="is-size-6 movie-info director"></h2>
@@ -105,7 +106,7 @@
             <section class="modal-card-body">
                 <p class="has-text-centered">
                     <h1 class="is-size-3 has-text-centered">
-                        Show added! Watch responsibly.
+                        Movie added! Watch responsibly.
                     </h1>
                 </p>
             </section>
@@ -121,7 +122,7 @@
                 Trending:
             </h1>
             <div class="movies-container column is-centered">
-                {{!-- drop searched show objects here --}}
+                {{!-- drop searched movie objects here --}}
             </div>
         </div>
     </div>
