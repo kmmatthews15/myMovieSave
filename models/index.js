@@ -7,6 +7,9 @@ const basename = path.basename(module.filename);
 const env = process.env.NODE_ENV || 'development';
 const config = require(__dirname + '/../config/config.json')[env];
 const db = {};
+const HOST = "host";
+const DIALECT = "mysql";
+const PORT = 3030;
 
 if (config.use_env_variable) {
    var sequelize = new Sequelize(process.env[config.use_env_variable]);
